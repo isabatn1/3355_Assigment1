@@ -1,0 +1,280 @@
+
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #1e1e1e;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #333;
+  padding: 0.5rem 0;
+  list-style: none;
+  border-radius: 4px;
+}
+
+.submenu li {
+  padding: 0.5rem 1.5rem;
+  white-space: nowrap;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #1e1e1e;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .submenu {
+    position: static;
+    background-color: #444;
+  }
+}
+
+
+.quicklinks {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: orange;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background-color: darkorange;
+}
+
+.main-slider {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+
+.main-slider img {
+  max-height: max-content;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.main-slider h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.deals-box {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.deals-box img {
+  max-height: 280px;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+
+.deals-box h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.deals-box .price {
+  font-size: 1.2rem;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.slider-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.slider-inline {
+  margin-top: 2rem;
+  align-items: stretch;
+}
+
+
+
+
+
+
+
+.deals-box {
+  flex: 1;
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+
+
+.suggested-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+.suggested-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.suggested-card {
+  width: 200px;
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #333;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.suggested-card:hover {
+  transform: translateY(-4px);
+}
+
+.suggested-card img {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+}
+
+.suggested-card h4 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.suggested-card .price {
+  color: green;
+  font-weight: bold;
+}
+
+.stars {
+  color: gold;
+  font-size: 1rem;
+}
+
+.visited-box {
+  background: #eee;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 8px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.visited-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.visited-box li {
+  margin: 0.5rem 0;
+  font-weight: bold;
+}
+
+
+.slider-and-deals {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
